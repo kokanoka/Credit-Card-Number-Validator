@@ -2,28 +2,27 @@
 
 ## Краткое описание
 
-06.08.21 - 06.08.21 было проведено ручное тестирование приложения Credit Card Number Validator.
+06.08.21 - 09.08.21 было проведено дымовое тестирование приложения Credit Card Number Validator.
 
-На тестирование затрачено: 1 час.
+На тестирование затрачено: 3 часа.
 
 В результате тестирования выявлены следующие дефекты:
-* https://github.com/kokanoka/Credit-Card-Number-Validator/issues/1
-* https://github.com/kokanoka/Credit-Card-Number-Validator/issues/2
-* https://github.com/kokanoka/Credit-Card-Number-Validator/issues/3
+* [Ошибка при проверке карт](https://github.com/kokanoka/Credit-Card-Number-Validator/issues/4)
 
-В качестве тестовых данных использовались данные https://www.freeformatter.com/credit-card-number-generator-validator.html:
-* 4917266763167237 
-* 4929671314800499
-* 6011986632383729
-* 30446199745125 fail
-* 5346917618100777
-* 3537571898605254
-* 36606829379587 fail
-* 6371376596206526
-* 340144774279389 fail
-* 5453359993921833 
-* 5018236677893488
+
+В качестве тестовых данных использовались данные [Credit Card Number Generator & Validator](https://www.freeformatter.com/credit-card-number-generator-validator.html)
+* VISA: 4929751092936721, 4383147479162891, 4485330769354615205
+* Discover: 6011252348610230, 6011447639761466, 6011537607830450651
+* Diners Club - Carte Blanche: 30335140069562, 30372779983656, 30312523872656
+* Visa Electron: 4508167640906521, 4508150279331187, 4026808325763272
+* MasterCard: 5501948225631038, 5479447371645254, 5529131155168655
+* JCB: 3537787561789460, 3528162596580568, 3528426618343878254
+* Diners Club - International: 36943242729605, 36420327114417, 36447084197657
+* InstaPayment: 6397500928577698, 6370784182603470, 6394746120511570
+* American Express (AMEX): 377102320831125, 375850383360307, 349943221099147
+* Diners Club - North America: 5539359562816750, 5403262322145101, 5564025870633231
+* Maestro: 6304734150167405, 5020822809177027, 5038909742333807
 
 Тестирование производилось в следующем окружении:
 * Windows 10, 64 bit
-* Java 11
+* Java 11.0.12
